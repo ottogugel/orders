@@ -1,0 +1,29 @@
+### Criando o projeto
+
+digitar npx create-expo-app --template
+
+escolher navigation (typescript)
+
+informar um nome do aplicativo
+
+e depois dar cd nome da pasta e code .
+
+deletar pasta app, components e constants
+
+npx expo start para iniciar o app
+
+instalar o nativewind@2.0.11
+instalar o tailwindcss@3.3.2 --save-dev
+
+executar npx tailwindcss init
+
+colocar no tailwind.config.js
+content: ["./src/app/**/*.{ts, tsx}", "./src/components/**/*.{ts, tsx}"],
+
+colocar no babel.config.js ["nativewind/babel"],
+
+criar um arquivo types para definir poder utilizar o className no typescript
+
+criar um arquivo _layout.tsx para que utilize em todas as telas o mesmo background.
+
+rodar npx expo install expo-font @expo-google-fonts/inter
