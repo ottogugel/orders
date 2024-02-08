@@ -7,7 +7,7 @@ import {
   Inter_600SemiBold,
   Inter_700Bold,
 } from "@expo-google-fonts/inter";
-import Loading from "../components/Loading";
+import Loading from "../components/loading";
 
 export default function Layout() {
   const [fontsLoaded] = useFonts({
@@ -22,7 +22,7 @@ export default function Layout() {
   }
 
   return (
-    <SafeAreaView className="bg-slate-900  flex-1">
+    <SafeAreaView className="flex-1 bg-slate-900">
       <Slot />
     </SafeAreaView>
   );
