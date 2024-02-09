@@ -1,8 +1,6 @@
-# :video_game: NLW Expert
+<h1 align="center"> <img alt="nlw-logo" src="/src/assets/logo.png" /> </h1>
 
-<h1 align="center"> <img alt="nlw-logo" src="/web/src/assets/logo-nlw-esports.svg" /> </h1>
-
-No NLW eSports foi desenvolvido uma plataforma web e mobile onde Gamers podem encontrar parceiros para seus jogos favoritos.
+No NLW Expert foi desenvolvido uma aplicativo de delivery de comida sendo mobile.
 
 ![cover](.github/cover.png?style=flat)
 
@@ -17,14 +15,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Expo](https://docs.expo.dev/)
 - [Nativewind](https://expressjs.com/pt-br)
 - [CLSX](https://www.prisma.io/)
+- [ZUSTAND](https://zustand-demo.pmnd.rs/)
 
 ## :computer: Projeto
 
-Projeto construído do evento Next Level Week da Rocketseat.
+Projeto construído do evento Expert Next Level Week da Rocketseat.
 
 ## :label: Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1150897317533332617). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1336456468568916765/nlw-expert-orders). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 
 ## :notebook: Sumário
@@ -35,7 +34,7 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 ## :tada: Créditos
 
-A ideia do app fazia parte da [Rocketseat](https://www.rocketseat.com.br/) dentro de um evento chamado NLW Return 2.0
+A ideia do app fazia parte da [Rocketseat](https://www.rocketseat.com.br/) dentro de um evento chamado NLW Expert
 
 ## 📝 Licença
 

@@ -3,17 +3,24 @@ import { View, FlatList, SectionList, Text } from 'react-native';
 import { Link } from 'expo-router';
 
 import { CATEGORIES, MENU } from '@/utils/data/products'
+import { useCartStore } from "@/stores/card-store";
+
 import { Header } from '@/components/header';
 import { CategoryButton } from '@/components/category-button';
 import { Product } from '@/components/product';
 
+
 export default function Home() {
+  const cartStore = useCartStore()
 
   // Definir que vai sempre começar da categoria 0 ao ser selecionado.
   const [category, setCategory] = useState(CATEGORIES[0])
 
   // Referenciar a lista de cada categoria.
   const sectionListRef = useRef<SectionList>(null)
+
+  //
+  const cartQuantityItems = cartStore.products.reduce((total, product) => total + product.quantity, 0)
 
   // Ao clicar na categoria vai mudar o estado.
   function handleCategorySelect(SelectedCategory: string) {
@@ -35,7 +42,7 @@ export default function Home() {
 
   return (
     <View className="flex-1 pt-8">
-      <Header title="Make your order" cartQuantityItems={5} />
+      <Header title="Make your order" cartQuantityItems={cartQuantityItems} />
 
       {/* LISTAGEM DAS CATEGORIAS */}
       <FlatList

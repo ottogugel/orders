@@ -71,3 +71,7 @@ usar o link do expo-router para navegar até o produto, faz a interpolação
 interpolação = chaves e com crase.
 
 {"\u2022"} = ponto na frente dos ingredientes por ordem
+
+instalar o zustand npm install zustand
+
+[] = array = lista

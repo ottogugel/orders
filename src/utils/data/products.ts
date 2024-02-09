@@ -29,20 +29,20 @@ const MENU = [
       {
         id: "2",
         title: "X-JavaScript",
-        price: 34.9,
+        price: 7.0,
         description:
-          "Os ingredientes desse hambúrguer mudam toda semana, então você sempre terá uma surpresa...",
+          "The ingredients of this burger change every week, so you'll always be in for a surprise...",
         cover: require("../../assets/products/cover/2.png"),
         thumbnail: require("../../assets/products/thumbnail/2.png"),
         ingredients: [
-          "Pão brioche;",
-          "2x carnes smash (blend da casa) de 80g;",
-          "Queijo cheddar;",
-          "Alface;",
-          "Tomate;",
-          "Picles;",
-          "Cebola;",
-          "Molho da casa;",
+          "Brioche bread;",
+          "2x 80g smash meats (house blend);",
+          "Cheddar cheese;",
+          "Lettuce;",
+          "Tomato;",
+          "Pickles;",
+          "Onion;",
+          "House sauce",
         ],
       },
       {
@@ -131,10 +131,10 @@ const MENU = [
   },
 ];
 
-const PRODUCTS = MENU.map((item) => item.data).flat()
+const PRODUCTS = MENU.map((item) => item.data).flat();
 
-const CATEGORIES = MENU.map((item) => item.title)
+const CATEGORIES = MENU.map((item) => item.title);
 
-type ProductProps = (typeof PRODUCTS)[0]
+type ProductProps = (typeof PRODUCTS)[0];
 
-export { MENU, PRODUCTS, CATEGORIES, ProductProps }
+export { MENU, PRODUCTS, CATEGORIES, ProductProps };
