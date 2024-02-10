@@ -1,8 +1,8 @@
 <h1 align="center"> <img alt="nlw-logo" src="/src/assets/logo.png" /> </h1>
 
-No NLW Expert foi desenvolvido uma aplicativo de delivery de comida sendo mobile.
+## :computer: Projeto
 
-![cover](.github/cover.png?style=flat)
+Projeto construído no evento NLW Expert onde foi desenvolvido uma aplicativo de delivery.
 
 ## :rocket: Tecnologias
 
@@ -15,11 +15,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Expo](https://docs.expo.dev/)
 - [Nativewind](https://expressjs.com/pt-br)
 - [CLSX](https://www.prisma.io/)
-- [ZUSTAND](https://zustand-demo.pmnd.rs/)
-
-## :computer: Projeto
-
-Projeto construído do evento Expert Next Level Week da Rocketseat.
+- [Zustand](https://zustand-demo.pmnd.rs/)
 
 ## :label: Layout
 

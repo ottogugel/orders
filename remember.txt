@@ -75,3 +75,14 @@ interpolação = chaves e com crase.
 instalar o zustand npm install zustand
 
 [] = array = lista
+
+
+###
+
+React Native: Framework para o desenvolvimento de aplicativos móveis.
+
+Expo: Plataforma que simplifica o desenvolvimento de aplicações React Native.
+
+JavaScript: Linguagem de programação utilizada no desenvolvimento.
+
+WhatsApp API: Integração para facilitar o envio dos produtos selecionados para o WhatsApp.

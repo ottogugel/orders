@@ -1,6 +1,6 @@
 import { ProductProps } from "@/utils/data/products";
 import { create } from "zustand";
-import * as cartInMemory from './helpers/cart-In-Memory'
+import * as cartInMemory from './helpers/cart-In-memory'
 
 
 export type ProductsCartProps = ProductProps & {
