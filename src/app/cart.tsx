@@ -15,7 +15,7 @@ export default function Cart() {
 
   return (
     <View className="flex-1 pt-8">
-      <Header title="Seu carrinho" />
+      <Header title="Your cart" />
     
     <ScrollView>
      { cartStore.products.length > 0 ? (
@@ -29,7 +29,7 @@ export default function Cart() {
       </View>
       ) : (
       <Text className="font-body text-slate-400 text-center my-8">
-      Seu carrinho está vazio.
+      Your cart is empty. 
       </Text>
       )}
 

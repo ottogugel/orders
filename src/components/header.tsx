@@ -5,7 +5,7 @@ import { Link } from 'expo-router';
 
 type HeaderProps = {
   title: string;
-  cartQuantityItems: number;
+  cartQuantityItems?: number;
 };
 
 export function Header({ title, cartQuantityItems = 0 }: HeaderProps) {
