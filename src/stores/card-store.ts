@@ -1,23 +1,38 @@
-import { ProductProps } from "@/utils/data/products";
 import { create } from "zustand";
-import * as cartInMemory from './helpers/cart-In-memory'
+import { createJSONStorage, persist } from "zustand/middleware"
+import AsyncStorage from "@react-native-async-storage/async-storage";
+
+import { ProductProps } from "@/utils/data/products";
+import * as cartInMemory from "./helpers/cart-In-memory";
+
 
 
 export type ProductsCartProps = ProductProps & {
-  quantity: number
-}
+  quantity: number;
+};
 
 type StateProps = {
-  products: ProductsCartProps[]
-  add: (product: ProductProps) => void
+  products: ProductsCartProps[];
+  add: (product: ProductProps) => void;
+  remove: (productId: string) => void;
 };
 
 // Guardar e compartilhar o estado com todos os componentes.
-export const useCartStore = create<StateProps>((set) => ({
+export const useCartStore = create(
+  persist<StateProps>((set) => ({
   products: [],
 
   // Usando o método de add onde vai receber o produto com um determinado tipo.
-  add: (product: ProductProps) => set((state) => ({
-    products: cartInMemory.add(state.products, product)
-  })),
-}))
+  add: (product: ProductProps) =>
+    set((state) => ({
+      products: cartInMemory.add(state.products, product),
+    })),
+
+  remove: (productId: string) =>
+    set((state) => ({
+      products: cartInMemory.remove(state.products, productId),
+    })),
+}), {
+  name: "nlw-expert:cart",
+  storage: createJSONStorage(() => AsyncStorage)
+}));

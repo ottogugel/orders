@@ -16,6 +16,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Nativewind](https://expressjs.com/pt-br)
 - [CLSX](https://www.prisma.io/)
 - [Zustand](https://zustand-demo.pmnd.rs/)
+- [Keyboard-Aware-Scroll-View](https://github.com/APSL/react-native-keyboard-aware-scroll-view)
+- [AsyncStorage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
 
 ## :label: Layout
 

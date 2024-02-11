@@ -76,6 +76,8 @@ instalar o zustand npm install zustand
 
 [] = array = lista
 
+.trim () = remove os espaços antes e depois.
+
 
 ###
 
@@ -86,3 +88,4 @@ Expo: Plataforma que simplifica o desenvolvimento de aplicações React Native.
 JavaScript: Linguagem de programação utilizada no desenvolvimento.
 
 WhatsApp API: Integração para facilitar o envio dos produtos selecionados para o WhatsApp.
+
