@@ -5,7 +5,7 @@ const MENU = [
       {
         id: "1",
         title: "X-React",
-        price: 5.00,
+        price: 5.0,
         description:
           "A hamburger so beautiful that it made me hungry while I was making this layout for the project...",
         cover: require("../../assets/products/cover/1.png"),
@@ -29,7 +29,7 @@ const MENU = [
       {
         id: "2",
         title: "X-JavaScript",
-        price: 7.00,
+        price: 7.0,
         description:
           "The ingredients of this burger change every week, so you'll always be in for a surprise...",
         cover: require("../../assets/products/cover/2.png"),
@@ -48,20 +48,20 @@ const MENU = [
       {
         id: "3",
         title: "X-Cobol",
-        price: 6.60,
+        price: 6.6,
         description:
-          "Aquele hambúrguer que não podemos tirar do cardápio devido aos clientes mais antigos da hamburgueria...",
+          "That burger that we can't take off the menu because of the burger shop's older customers...",
         cover: require("../../assets/products/cover/3.png"),
         thumbnail: require("../../assets/products/thumbnail/3.png"),
         ingredients: [
-          "Pão brioche;",
-          "2x carnes smash (blend da casa) de 80g;",
-          "Queijo cheddar;",
-          "Alface;",
-          "Tomate;",
-          "Picles;",
-          "Cebola;",
-          "Molho da casa;",
+          "Brioche bread;",
+          "2x 80g smash meats (house blend);",
+          "Cheddar cheese;",
+          "Lettuce;",
+          "Tomato;",
+          "Pickles;",
+          "Onion;",
+          "House sauce",
         ],
       },
       {
@@ -69,18 +69,18 @@ const MENU = [
         title: "X-Tailwind",
         price: 6.04,
         description:
-          "Aquele que você não gosta de primeira, mas depois fica viciado e não consegue mais largar...",
+          "The kind you don't like at first, but then you get hooked and can't let go...",
         cover: require("../../assets/products/cover/4.png"),
         thumbnail: require("../../assets/products/thumbnail/4.png"),
         ingredients: [
-          "Pão brioche;",
-          "2x carnes smash (blend da casa) de 80g;",
-          "Queijo cheddar;",
-          "Alface;",
-          "Tomate;",
-          "Picles;",
-          "Cebola;",
-          "Molho da casa;",
+          "Brioche bread;",
+          "2x 80g smash meats (house blend);",
+          "Cheddar cheese;",
+          "Lettuce;",
+          "Tomato;",
+          "Pickles;",
+          "Onion;",
+          "House sauce",
         ],
       },
     ],
@@ -90,16 +90,16 @@ const MENU = [
     data: [
       {
         id: "5",
-        title: "Sorvete com Brownie",
+        title: "Ice cream with Brownie",
         price: 3.82,
         description:
-          "Uma sobremesa deliciosa para saborear. Escolha o sorvete e a calda que desejar...",
+          "A delicious dessert to enjoy. Choose the ice cream and syrup you want...",
         cover: require("../../assets/products/cover/5.png"),
         thumbnail: require("../../assets/products/thumbnail/5.png"),
         ingredients: [
           "1x Brownie;",
-          "1x Bola de sorvete a sua escolha",
-          "Escolha sua calda;",
+          "1x scoop of ice cream of your choice",
+          "Choose your syrup;",
         ],
       },
       {
@@ -107,10 +107,10 @@ const MENU = [
         title: "Cupcake",
         price: 4.62,
         description:
-          "Um delicioso Cupcake para adoçar. Escolha o sabor que você gosta...",
+          "A delicious cupcake to sweeten things up. Choose the flavor you like...",
         cover: require("../../assets/products/cover/6.png"),
         thumbnail: require("../../assets/products/thumbnail/6.png"),
-        ingredients: ["Escolha o sabor;", "Chantilly;"],
+        ingredients: ["Choose your flavor;", "Chantilly;"],
       },
     ],
   },
@@ -119,12 +119,12 @@ const MENU = [
     data: [
       {
         id: "7",
-        title: "Hmmm, coquinha!",
+        title: "Coke",
         price: 1.39,
         thumbnail: require("../../assets/products/thumbnail/7.png"),
         cover: require("../../assets/products/cover/7.png"),
         description:
-          "Uma coca super gelada para acompanhar o seu super lanche...",
+          "A super cold coke to go with your super snack...",
         ingredients: [],
       },
     ],

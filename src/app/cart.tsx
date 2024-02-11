@@ -1,7 +1,8 @@
-import { View, Text, ScrollView, Alert } from "react-native";
+import { View, Text, ScrollView, Alert, Linking } from "react-native";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import  { useState } from 'react';
 import { Feather } from "@expo/vector-icons";
+import { useNavigation } from 'expo-router'
 
 import { Header } from "@/components/header";
 import { Product } from "@/components/product";
@@ -13,8 +14,11 @@ import { Input } from "@/components/input";
 import { Button } from "@/components/button";
 import { LinkButton } from "@/components/link-button";
 
+// const PHONE_NUMBER = "insira-seu-telefone-aqui"
+
 
 export default function Cart() {
+  const navigation = useNavigation()
   const [address, setAddress] = useState("");
 
   const cartStore = useCartStore();
@@ -43,17 +47,20 @@ export default function Cart() {
     console.log(products);
 
     const message = `
-    🍔 NOVO PEDIDO
-    \n Entregar em: ${address}
+    🍔 NEW ORDER
+    \n Deliver to: ${address}
 
     ${products}
 
-    \n Valor Total: ${total}`
+    \n Total value: ${total}`;
 
     console.log(message)
+
+    // Linking.openURL(`http://api.whatsapp.com/send?phone=${PHONE_NUMBER}&text=${message}`)
+
+    cartStore.clear()
+    navigation.goBack();
   }
-
-
 
   return (
     <View className="flex-1 pt-8">
@@ -90,6 +97,9 @@ export default function Cart() {
 
             <Input placeholder="Enter the delivery address with street, neighborhood, zip code, number and complement..."
             onChangeText={setAddress}
+            blurOnSubmit={true}
+            onSubmitEditing={handleOrder}
+            returnKeyType="next"
           />
           </View>
         </ScrollView>
