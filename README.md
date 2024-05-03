@@ -1,5 +1,7 @@
 <h1 align="center"> <img alt="nlw-logo" src="/src/assets/logo.png" /> </h1>
 
+![image](./src/assets/thumbnail.png)
+
 ## :computer: Projeto
 
 Projeto construído no evento NLW Expert onde foi desenvolvido uma aplicativo de delivery.
